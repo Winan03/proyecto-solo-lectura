@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualización de Código</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .code-btn {
+      padding: 15px 25px;
+      font-size: 16px;
+      background: #4a6cf7;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .code-btn:hover {
+      background: #324ab2;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔒 Código en modo solo lectura</h1>
+  <div class="btn-container">
+    <a class="code-btn" href="app.html" target="_blank">Ver app.py</a>
+    <a class="code-btn" href="procesamiento.html" target="_blank">Ver procesamiento.py</a>
+    <a class="code-btn" href="entrenamiento.html" target="_blank">Ver entrenamiento.py</a>
+    <a class="code-btn" href="index_script.html" target="_blank">Ver index.py</a>
+  </div>
+</body>
+</html>
