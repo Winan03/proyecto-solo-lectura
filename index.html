@@ -2,49 +2,71 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Visualización de Código</title>
+  <title>Código Solo Lectura</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 50px;
+      padding: 60px 20px;
     }
 
     h1 {
-      margin-bottom: 30px;
+      color: #333;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     }
 
     .btn-container {
       display: flex;
-      gap: 20px;
       flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
     .code-btn {
-      padding: 15px 25px;
-      font-size: 16px;
-      background: #4a6cf7;
+      background: linear-gradient(135deg, #4a6cf7, #6a8fff);
       color: white;
+      padding: 15px 30px;
+      border-radius: 12px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s;
     }
 
     .code-btn:hover {
-      background: #324ab2;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      background: linear-gradient(135deg, #3b5ce0, #5a78ff);
+    }
+
+    @media (max-width: 600px) {
+      .code-btn {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🔒 Código en modo solo lectura</h1>
+  <h1>🔒 Visualización de Código en Solo Lectura</h1>
   <div class="btn-container">
-    <a class="code-btn" href="app.html" target="_blank">Ver app.py</a>
-    <a class="code-btn" href="procesamiento.html" target="_blank">Ver procesamiento.py</a>
-    <a class="code-btn" href="entrenamiento.html" target="_blank">Ver entrenamiento.py</a>
-    <a class="code-btn" href="index_script.html" target="_blank">Ver index.py</a>
+    <a class="code-btn" href="app.html">Ver app.py</a>
+    <a class="code-btn" href="procesamiento.html">Ver procesamiento.py</a>
+    <a class="code-btn" href="entrenamiento.html">Ver entrenamiento.py</a>
+    <a class="code-btn" href="index_script.html">Ver index.py</a>
   </div>
 </body>
 </html>
